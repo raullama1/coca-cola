@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+#nav {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+}
+#nav h1{
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+#nav i{
+    font-size: 20px;
+    margin-right: 70px;
+}
+#nav h5{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#nav img{
+    height: 50px;  
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background-color: red;
+}
+
+#content {
+    height: calc(100% - 140px);
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#left {
+    width: 36%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 160px 100px; 
+}
+#right {
+    width: 36%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 200px 90px;
+}
+#center{
+    width: 28%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top: 38px;
+}
+
+#left h1{
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+#left h1 span{
+    color: red;
+    font-weight: 500;
+}
+
+#left p{
+    font-size: 15px;
+    width: 72%;
+    text-align: justify;
+    line-height: 15px;
+    margin-bottom: 35px;
+}
+
+#left button {
+    background-color: red;
+    padding: 16px 20px;
+    margin-top: 13px;
+    border-radius: 40px;
+    font-size: 15px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border: none;
+    position: absolute;
+    left: 10%;
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+#left button:hover {
+    animation: shake 0.1s infinite; /* Add shake animation on hover */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(-5px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(5px);
+    }
+}
+
+#center-bg {
+    background-color: red;
+    height: 82%;
+    width: 100%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background-image: url(images/coca-cola-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-size: 190%;
+    filter: blur(4px);
+}
+
+#content img {
+    height: 100%;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%, 0);
+    z-index: 99;
+}
+
+#right-elems {
+    /* background-color: red; */
+    width: 350px;
+    padding-top: 60px;
+}
+#elem1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    /* background-color: blue; */
+    opacity: 0.6;
+    border-bottom: 1px solid #fff;
+}
+#elem1 h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+#elem1 i{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+#elem2 h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px ;
+}
+#elem2 p {
+    font-size: 12px;
+    width: 80%;
+    opacity: 0.6;
+}
+
+
